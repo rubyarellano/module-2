@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    
+    xmlns:local="clr-namespace:SimpleApp"
+    
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SimpleApp.MainPage">
+    <VerticalStackLayout>
+        <StackLayout
+            VerticalOptions="FillAndExpand"/>
+        <Label
+        Text="CALCULATOR"
+        TextColor="Black"
+        BackgroundColor="#ADD8E6"
+        FontSize="25"
+        HorizontalOptions="Center"
+        />    
+        <Label
+            x:Name="ResultLabel"
+            Text="0"
+            FontSize="40"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            HorizontalTextAlignment="End"
+            Padding="10"
+            />            
+        <Grid           
+            RowSpacing="5"
+            ColumnSpacing="5"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"          
+            >
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="70" />
+                <RowDefinition
+                    Height="70" />
+                <RowDefinition
+                    Height="70" />
+                <RowDefinition
+                    Height="70" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="70" />
+                <ColumnDefinition
+                    Width="70" />
+                <ColumnDefinition
+                    Width="70" />
+                <ColumnDefinition
+                    Width="70" />
+            </Grid.ColumnDefinitions>
+           
+            <Button
+                Text="7"
+                Grid.Row="0"
+                Grid.Column="0"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="8"
+                Grid.Row="0"
+                Grid.Column="1"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="9"
+                Grid.Row="0"
+                Grid.Column="2"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="/"
+                BackgroundColor="#ADD8E6"
+                Grid.Row="0"
+                Grid.Column="3"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="4"
+                Grid.Row="1"
+                Grid.Column="0"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="5"
+                Grid.Row="1"
+                Grid.Column="1"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="6"
+                Grid.Row="1"
+                Grid.Column="2"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="*"
+                BackgroundColor="#ADD8E6"
+                Grid.Row="1"
+                Grid.Column="3"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="1"
+                Grid.Row="2"
+                Grid.Column="0"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="2"
+                Grid.Row="2"
+                Grid.Column="1"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="3"
+                Grid.Row="2"
+                Grid.Column="2"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="-"
+                BackgroundColor="#ADD8E6"
+                Grid.Row="2"
+                Grid.Column="3"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="0"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Clicked="OnButtonClicked" />
+            <Button
+                Text="="
+                Grid.Row="3"
+                Grid.Column="2"
+                Clicked="OnEqualClicked" />
+            <Button
+                Text="+"
+                BackgroundColor="#ADD8E6"
+                Grid.Row="3"
+                Grid.Column="3"
+                Clicked="OnButtonClicked" />
+        </Grid>  
+    </VerticalStackLayout>
+</ContentPage>
