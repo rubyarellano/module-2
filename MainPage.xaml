@@ -130,7 +130,7 @@
                 Clicked="OnEqualClicked" />
             <Button
                 Text="+"
-                BackgroundColor="#ADD8E6"
+                BackgroundColor="#C0C0C0"
                 Grid.Row="3"
                 Grid.Column="3"
                 Clicked="OnButtonClicked" />
